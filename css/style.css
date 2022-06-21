@@ -1,0 +1,35 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+/* //universal selector  */
+
+body {
+    font-family: "Merriweather Sans", sans-serif;
+    color: #4c6986;
+}
+
+.wrapper {
+    height: 800px;
+    max-width: 1440px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.restart {
+    width: 175px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    border: 2px solid #4c6986;
+    
+}
+
+.restart:hover{
+    background: #4c6986 ;
+    color: white;
+}
