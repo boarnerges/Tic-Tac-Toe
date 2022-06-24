@@ -1,4 +1,5 @@
 export default class Game {
+
     constructor(){
         console.log("init game");
         this.turn = "X";
@@ -21,6 +22,14 @@ export default class Game {
 // we exported this function to main.js 
 
     makeMove(i){
+
+        if(this.board[i]) {
+            return;
+        }
          this.board[i] = this.turn; // X or O
     }
+
+
+
+
 }
