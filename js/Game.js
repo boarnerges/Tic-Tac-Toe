@@ -27,7 +27,8 @@ export default class Game {
             return;
         }
          this.board[i] = this.turn; // X or O
-         this.findWinningCombinations();
+         let winningCombination = this.findWinningCombinations();
+         if(!winningCombination)
     }
 
     findWinningCombinations(){
@@ -44,8 +45,11 @@ export default class Game {
         
         for(const combination of winningCombinations){
             const [a,b,c] = combination;
-
-           this.board[a] === this
+            if (this.board[a] &&
+           (this.board[a] === this.board[b] && this.board[a] === this.board[c])){
+            return combination;
+           }
+           
         }
     }
 
